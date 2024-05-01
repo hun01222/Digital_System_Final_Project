@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module tb_2
+module tb_2;
 
   reg A, B, RST, CLK;
 

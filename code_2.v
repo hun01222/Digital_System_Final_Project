@@ -6,10 +6,12 @@ module d_latch_module(
   reg q, q_bar;
   wire r, s;
 
-  assign s <= !(d && clk);
-  assign r <= !(s && clk);
-  assign q <= !(q_bar && s);
-  assign q_bar <= !(q && r);
+  always @(*) begin
+    assign s <= !(d && clk);
+    assign r <= !(s && clk);
+    assign q <= !(q_bar && s);
+    assign q_bar <= !(q && r);
+  end
 
 endmodule
 
