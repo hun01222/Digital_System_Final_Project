@@ -3,8 +3,8 @@
 module tb_1
   #(parameter width = 4);
 
-  wire [width-1:0] A, B;
-  wire S;
+  reg [width-1:0] A, B;
+  reg S;
 
   wire [width-1:0] SUM;
   wire V;
