@@ -1,5 +1,5 @@
 module binary_adder_subtracter_module
-  #(parameter width = 4)
+#(parameter width = 4)
 (
   input [width-1:0] a, [width-1:0] b, s,
   output [width-1:0] sum, v
