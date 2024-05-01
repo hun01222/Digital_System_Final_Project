@@ -1,6 +1,7 @@
 module half_adder_module (a, b, sum, carry);
 	input a, b;
 	output sum, carry;
+  reg sum, carry;
 	
 	always@(a or b)
 	begin
@@ -12,6 +13,7 @@ endmodule
 module full_adder_module (a, b, cin, sum, cout);
 	input a, b, cin;
 	output sum, cout;
+  reg sum, cout;
 	wire sum1, cout1, cout2;
 	
 	always@(a or b or cin)
