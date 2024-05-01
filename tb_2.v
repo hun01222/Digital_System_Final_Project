@@ -4,7 +4,7 @@ module tb_2;
 
   reg A, B, RST, CLK;
 
-  reg Q, Q_BAR;
+  wire Q, Q_BAR;
 
   alert_module alert(.a(A), .b(B), .rst(RST), .clk(CLK), .q(Q), .q_bar(Q_BAR));
 
